@@ -1,0 +1,37 @@
+[
+  {
+    "region": "Europe",
+    "country": "England",
+    "place": "Buckingham Palace"
+  },
+  {
+    "region": "Europe",
+    "country": "England",
+    "place": "SW4 9SL"
+  },
+  {
+    "region": "Europe",
+    "country": "France",
+    "place": "Paris"
+  },
+  {
+    "region": "North America",
+    "country": "USA",
+    "place": "Space Needle"
+  },
+  {
+    "region": "North America",
+    "country": "USA",
+    "place": "Grand Canyon"
+  },
+  {
+    "region": "North America",
+    "country": "Canada",
+    "place": "Lake Louise"
+  },
+  {
+    "region": "South America",
+    "country": "Brazil",
+    "place": "Christ the Redeemer"
+  }
+]

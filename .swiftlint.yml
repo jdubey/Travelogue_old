@@ -1,0 +1,7 @@
+excluded:
+- Pods
+- R.generated.swift
+
+disabled_rules:
+- line_length
+
