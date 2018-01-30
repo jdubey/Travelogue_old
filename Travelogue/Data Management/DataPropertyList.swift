@@ -29,4 +29,3 @@ class RegionList: Codable {
     var name: String
     var countries: [CountryList]
 }
-

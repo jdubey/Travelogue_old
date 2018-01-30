@@ -9,5 +9,5 @@ target 'Travelogue' do
 	pod 'R.swift'
   	pod 'RealmSwift'
   	pod 'SwiftLint'
-  	pod 'R.swift'
+	pod 'BEMCheckBox'
 end

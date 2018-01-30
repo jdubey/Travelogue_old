@@ -64,11 +64,11 @@ class DataLoader: NSObject {
 //            print(error.localizedDescription)
 //        }
     }
-    
+
     func loadJson() {
         let jsonPath = Bundle.main.path(forResource: "AppData", ofType: "json")
         let jsonData = FileManager.default.contents(atPath: jsonPath!)
-        
+
         do {
             let decoder = JSONDecoder()
             let entries = try decoder.decode([Entry].self, from: jsonData!)
@@ -96,7 +96,7 @@ class DataLoader: NSObject {
                     realm.add(place)
                 }
             }
-            
+
             // Create relationships
             for entry in entries {
                 if let place = realm.objects(Place.self).filter(NSPredicate(format: "name = %@", entry.place)).first,

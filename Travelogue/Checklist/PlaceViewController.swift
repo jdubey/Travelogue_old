@@ -19,13 +19,13 @@ class PlaceViewController: UIViewController, TableViewConfigurable {
         self.places = country.places.flatMap {$0}
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         self.country = Country()
         self.places = [Place]()
         super.init(coder: aDecoder)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = country.name
