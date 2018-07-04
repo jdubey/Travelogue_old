@@ -18,6 +18,7 @@ class RegionViewController: UIViewController, TableViewConfigurable {
         return searchController
     }()
 
+    // Change is here
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView(regionTableView)
