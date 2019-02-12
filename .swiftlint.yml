@@ -4,4 +4,23 @@ excluded:
 
 disabled_rules:
 - line_length
-
+- unused_optional_binding
+- nesting
+trailing_whitespace:
+  ignores_empty_lines: true
+vertical_whitespace:
+  max_empty_lines: 2
+large_tuple:
+  warning: 3
+  error: 4
+identifier_name:
+  max_length:
+   warning: 60
+  min_length:
+    warning: 2
+    error: 1
+  allowed_symbols:
+    - "_"
+    - ")"
+    - "("
+    - ":"

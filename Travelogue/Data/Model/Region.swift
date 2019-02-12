@@ -10,13 +10,13 @@ import Foundation
 import RealmSwift
 
 enum RegionName: String {
-    case Africa
-    case Europe
+    case africa = "Africa"
+    case europe = "Europe"
 }
 
 class Region: BaseObject {
 
-    static let imageDict: [RegionName: UIImage] = [.Africa: Asset.afica.image, .Europe: Asset.europe.image]
+    static let imageDict: [RegionName: UIImage] = [.africa: Asset.afica.image, .europe: Asset.europe.image]
 //    @objc dynamic var name = ""
     @objc dynamic var id = 0
     let countries = LinkingObjects(fromType: Country.self, property: "region")
