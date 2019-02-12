@@ -8,21 +8,20 @@
 
 import UIKit
 
-class ChecklistViewController: UIViewController {
+class ChecklistViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Checklist"
-
         addNavigationController()
     }
 
     func addNavigationController() {
         let regionviewController = RegionViewController()
         let navController = UINavigationController(rootViewController: regionviewController)
-        addChildViewController(navController)
+        addChild(navController)
         view.addSubview(navController.view)
-        navController.didMove(toParentViewController: self)
+        navController.didMove(toParent: self)
     }
 }

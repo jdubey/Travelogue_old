@@ -8,7 +8,9 @@
 
 import UIKit
 
-class RegionViewController: UIViewController, TableViewConfigurable {
+class RegionViewController: BaseViewController, TableViewConfigurable {
+
+    var imageView: UIImageView!
 
     let regionTableView = UITableView()
     let regions = DataManager.defaultRealm().objects(Region.self)
@@ -24,7 +26,6 @@ class RegionViewController: UIViewController, TableViewConfigurable {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         regionTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         title = "Regions"
-
     }
 }
 
@@ -37,6 +38,7 @@ extension RegionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = regions[indexPath.row].name
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }

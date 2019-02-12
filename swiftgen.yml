@@ -1,0 +1,12 @@
+strings:
+  inputs: ${PROJECT_DIR}/Travelogue/Localization/Localizable.strings
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: ${PROJECT_DIR}/Travelogue/Generated/strings.swift
+xcassets:
+  inputs:
+    - ${PROJECT_DIR}/Travelogue/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: ${PROJECT_DIR}/Travelogue/Generated/assets-images.swift

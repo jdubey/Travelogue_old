@@ -9,15 +9,17 @@
 import UIKit
 import RealmSwift
 
-class CountryViewController: UIViewController, TableViewConfigurable {
+class CountryViewController: BaseViewController, TableViewConfigurable {
 
     let countryTableView = UITableView()
     let countries: [Country]
     let region: Region
 
+    var imageView: UIImageView!
+
     init(_ region: Region) {
         self.region = region
-        self.countries = region.countries.flatMap {$0}
+        self.countries = region.countries.compactMap {$0}
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -32,6 +34,17 @@ class CountryViewController: UIViewController, TableViewConfigurable {
         title = region.name
         configureTableView(countryTableView)
         countryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 375, height: 281))
+
+        imageView = UIImageView(frame: .zero)
+
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        headerView.addSubview(imageView)
+        imageView.pinToSuperView()
+        imageView.image = Region.imageDict[RegionName(rawValue: region.name)!]
+        imageView.contentMode = .scaleAspectFill
+        countryTableView.tableHeaderView = headerView
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +62,7 @@ extension CountryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = countries[indexPath.row].name
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }

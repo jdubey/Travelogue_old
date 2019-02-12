@@ -10,9 +10,17 @@ import UIKit
 
 class ToVisitViewController: UIViewController {
 
+    var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        imageView = UIImageView(frame: .zero)
+
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        imageView.pinToSuperView()
+        imageView.image = Asset.europe.image
+        imageView.contentMode = .center
     }
 
     override func didReceiveMemoryWarning() {

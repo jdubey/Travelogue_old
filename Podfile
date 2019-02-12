@@ -6,7 +6,8 @@ target 'Travelogue' do
   use_frameworks!
 
   # Pods for Travelogue
-	pod 'R.swift'
   	pod 'SwiftLint'
 	pod 'BEMCheckBox'
+    pod 'RealmSwift'
+    pod 'SwiftGen', '~> 6.0'
 end

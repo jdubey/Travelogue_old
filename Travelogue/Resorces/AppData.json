@@ -1,37 +1,50 @@
 [
   {
+      "id": 1,
     "region": "Europe",
     "country": "England",
     "place": "Buckingham Palace"
   },
   {
+      "id": 2,
     "region": "Europe",
     "country": "England",
     "place": "SW4 9SL"
   },
   {
+      "id": 3,
     "region": "Europe",
     "country": "France",
     "place": "Paris"
   },
   {
+       "id": 4,
     "region": "North America",
     "country": "USA",
     "place": "Space Needle"
   },
   {
+       "id": 5,
     "region": "North America",
     "country": "USA",
     "place": "Grand Canyon"
   },
   {
+       "id": 6,
     "region": "North America",
     "country": "Canada",
     "place": "Lake Louise"
   },
   {
+       "id": 7,
     "region": "South America",
     "country": "Brazil",
     "place": "Christ the Redeemer"
+  },
+  {
+       "id": 8,
+  "region": "Africa",
+  "country": "Brazil",
+  "place": "Christ the Redeemer"
   }
 ]

@@ -20,24 +20,25 @@ class PlacesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         checkbox = BEMCheckBox(frame: .zero)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     override func layoutSubviews() {
         if checkbox.superview == nil {
             checkbox.translatesAutoresizingMaskIntoConstraints = false
-            contentView.addSubview(checkbox!)
+            contentView.addSubview(checkbox)
             checkbox.heightAnchor.constraint(equalToConstant: 30).isActive = true
             checkbox.widthAnchor.constraint(equalToConstant: 30).isActive = true
             checkbox.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
             contentView.trailingAnchor.constraint(equalTo: checkbox.trailingAnchor, constant: 20).isActive = true
         }
+        super.layoutSubviews()
     }
 }

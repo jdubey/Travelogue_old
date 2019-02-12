@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7AC5B66B5E080FCACC43A65A /* Pods_Travelogue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F915BBE3D2252DD79A601584 /* Pods_Travelogue.framework */; };
-		C9B102C02173B5F4009DECAB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102BF2173B5F3009DECAB /* Realm.framework */; };
-		C9B102C12173B5F4009DECAB /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102BF2173B5F3009DECAB /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9B102C42173B5FB009DECAB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102C32173B5FB009DECAB /* RealmSwift.framework */; };
-		C9B102C52173B5FB009DECAB /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102C32173B5FB009DECAB /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9C6792D202094B200B3ED6C /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6792C202094B200B3ED6C /* PlacesTableViewCell.swift */; };
+		D02FBC6D2212E3F1004A89DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D02FBC6C2212E3F1004A89DB /* Podfile */; };
+		D02FBC712212E856004A89DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D02FBC702212E856004A89DB /* Localizable.strings */; };
+		D02FBC792212F91C004A89DB /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FBC772212F91C004A89DB /* strings.swift */; };
+		D02FBC7A2212F91C004A89DB /* assets-images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FBC782212F91C004A89DB /* assets-images.swift */; };
+		D02FBC802213030F004A89DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FBC7F2213030F004A89DB /* BaseViewController.swift */; };
+		D02FBC8322130EE1004A89DB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FBC8222130EE1004A89DB /* UIView+Extensions.swift */; };
+		D02FBC8522131647004A89DB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = D02FBC8422131646004A89DB /* swiftgen.yml */; };
+		D02FBC872213167F004A89DB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D02FBC862213167F004A89DB /* .swiftlint.yml */; };
 		D0304301201B6B78000FE97C /* AppData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0304300201B6B78000FE97C /* AppData.json */; };
 		D0304303201B6C0B000FE97C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0304302201B6C0B000FE97C /* Entry.swift */; };
 		D078C58820176F1E0090D655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C58720176F1E0090D655 /* AppDelegate.swift */; };
@@ -26,7 +30,6 @@
 		D078C5A52017833C0090D655 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5A42017833C0090D655 /* CountryViewController.swift */; };
 		D078C5A7201787470090D655 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5A6201787470090D655 /* PlaceViewController.swift */; };
 		D078C5AA2017890F0090D655 /* TableViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5A92017890F0090D655 /* TableViewConfigurable.swift */; };
-		D078C5AE201792F90090D655 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5AD201792F90090D655 /* R.generated.swift */; };
 		D078C5B0201793600090D655 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5AF201793600090D655 /* Region.swift */; };
 		D078C5B32017941A0090D655 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5B22017941A0090D655 /* BaseObject.swift */; };
 		D078C5B5201795070090D655 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C5B4201795070090D655 /* Country.swift */; };
@@ -45,8 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C9B102C52173B5FB009DECAB /* RealmSwift.framework in Embed Frameworks */,
-				C9B102C12173B5F4009DECAB /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,11 +55,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		43051C455013593C5883D2E5 /* Pods-Travelogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.release.xcconfig"; sourceTree = "<group>"; };
-		581BA928A5BD369D16F33AA0 /* Pods-Travelogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.debug.xcconfig"; sourceTree = "<group>"; };
-		C9B102BF2173B5F3009DECAB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		C9B102C32173B5FB009DECAB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		39508341B3929CF3D3E57941 /* Pods-Travelogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.release.xcconfig"; sourceTree = "<group>"; };
+		911081371044F9078134FE06 /* Pods-Travelogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C6792C202094B200B3ED6C /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		D02FBC6C2212E3F1004A89DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D02FBC702212E856004A89DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D02FBC772212F91C004A89DB /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
+		D02FBC782212F91C004A89DB /* assets-images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "assets-images.swift"; sourceTree = "<group>"; };
+		D02FBC7F2213030F004A89DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D02FBC8222130EE1004A89DB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D02FBC8422131646004A89DB /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
+		D02FBC862213167F004A89DB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D0304300201B6B78000FE97C /* AppData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppData.json; sourceTree = "<group>"; };
 		D0304302201B6C0B000FE97C /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D078C58420176F1E0090D655 /* Travelogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +81,6 @@
 		D078C5A42017833C0090D655 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		D078C5A6201787470090D655 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 		D078C5A92017890F0090D655 /* TableViewConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConfigurable.swift; sourceTree = "<group>"; };
-		D078C5AD201792F90090D655 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		D078C5AF201793600090D655 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		D078C5B22017941A0090D655 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		D078C5B4201795070090D655 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -92,9 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B102C02173B5F4009DECAB /* Realm.framework in Frameworks */,
 				7AC5B66B5E080FCACC43A65A /* Pods_Travelogue.framework in Frameworks */,
-				C9B102C42173B5FB009DECAB /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,15 +122,57 @@
 			path = Places;
 			sourceTree = "<group>";
 		};
+		D02FBC6F2212E833004A89DB /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				D02FBC702212E856004A89DB /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		D02FBC762212F91C004A89DB /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D02FBC772212F91C004A89DB /* strings.swift */,
+				D02FBC782212F91C004A89DB /* assets-images.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		D02FBC7D2213018E004A89DB /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				D02FBC7F2213030F004A89DB /* BaseViewController.swift */,
+			);
+			path = Universal;
+			sourceTree = "<group>";
+		};
+		D02FBC7E221301A0004A89DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D078C5B1201793680090D655 /* Model */,
+				D0B922BA2017B18600785AA3 /* Data Management */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D02FBC8122130ECD004A89DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D02FBC8222130EE1004A89DB /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D078C57B20176F1E0090D655 = {
 			isa = PBXGroup;
 			children = (
-				C9B102C32173B5FB009DECAB /* RealmSwift.framework */,
-				C9B102BF2173B5F3009DECAB /* Realm.framework */,
+				D02FBC8422131646004A89DB /* swiftgen.yml */,
+				D02FBC862213167F004A89DB /* .swiftlint.yml */,
 				D078C58620176F1E0090D655 /* Travelogue */,
 				D078C58520176F1E0090D655 /* Products */,
-				E00A2D37C99FF6F366EF9B67 /* Pods */,
 				117B34B90984DA1904A70027 /* Frameworks */,
+				DE07CB1294CBF65B53FBA1D6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,12 +187,15 @@
 		D078C58620176F1E0090D655 /* Travelogue */ = {
 			isa = PBXGroup;
 			children = (
-				D078C5AD201792F90090D655 /* R.generated.swift */,
+				D02FBC8122130ECD004A89DB /* Extensions */,
+				D02FBC7E221301A0004A89DB /* Data */,
+				D02FBC7D2213018E004A89DB /* Universal */,
+				D02FBC762212F91C004A89DB /* Generated */,
+				D02FBC6F2212E833004A89DB /* Localization */,
+				D02FBC6C2212E3F1004A89DB /* Podfile */,
 				D078C59A20176FEA0090D655 /* Tab Bar */,
 				D078C59920176FC70090D655 /* Checklist */,
 				D078C59F201771950090D655 /* To Visit */,
-				D078C5B1201793680090D655 /* Model */,
-				D0B922BA2017B18600785AA3 /* Data Management */,
 				D078C5A8201788AA0090D655 /* Protocols */,
 				D078C58720176F1E0090D655 /* AppDelegate.swift */,
 				D078C58B20176F1E0090D655 /* Main.storyboard */,
@@ -225,11 +274,11 @@
 			path = "Data Management";
 			sourceTree = "<group>";
 		};
-		E00A2D37C99FF6F366EF9B67 /* Pods */ = {
+		DE07CB1294CBF65B53FBA1D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				581BA928A5BD369D16F33AA0 /* Pods-Travelogue.debug.xcconfig */,
-				43051C455013593C5883D2E5 /* Pods-Travelogue.release.xcconfig */,
+				911081371044F9078134FE06 /* Pods-Travelogue.debug.xcconfig */,
+				39508341B3929CF3D3E57941 /* Pods-Travelogue.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -242,13 +291,13 @@
 			buildConfigurationList = D078C59620176F1E0090D655 /* Build configuration list for PBXNativeTarget "Travelogue" */;
 			buildPhases = (
 				92A17EF6107C77C0FAF403CC /* [CP] Check Pods Manifest.lock */,
-				D078C5AB201790E60090D655 /* Rswift */,
 				D078C58020176F1E0090D655 /* Sources */,
 				D078C58120176F1E0090D655 /* Frameworks */,
 				D078C58220176F1E0090D655 /* Resources */,
-				3825C091D75B5D2B1D3A6135 /* [CP] Embed Pods Frameworks */,
 				D078C5AC201790FA0090D655 /* SwiftLint */,
 				C9B102C22173B5F4009DECAB /* Embed Frameworks */,
+				0BF78A476CE359A73015C147 /* [CP] Embed Pods Frameworks */,
+				D02FBC6E2212E67E004A89DB /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -266,11 +315,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Josh Dubey";
 				TargetAttributes = {
 					D078C58320176F1E0090D655 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -298,32 +348,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02FBC872213167F004A89DB /* .swiftlint.yml in Resources */,
 				D078C59220176F1E0090D655 /* LaunchScreen.storyboard in Resources */,
 				D0304301201B6B78000FE97C /* AppData.json in Resources */,
 				D0D2E9AA201B35D100A01E23 /* Places.plist in Resources */,
 				D078C58F20176F1E0090D655 /* Assets.xcassets in Resources */,
 				D078C5BE2017A4BA0090D655 /* AppData.plist in Resources */,
+				D02FBC712212E856004A89DB /* Localizable.strings in Resources */,
+				D02FBC6D2212E3F1004A89DB /* Podfile in Resources */,
 				D078C58D20176F1E0090D655 /* Main.storyboard in Resources */,
+				D02FBC8522131647004A89DB /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3825C091D75B5D2B1D3A6135 /* [CP] Embed Pods Frameworks */ = {
+		0BF78A476CE359A73015C147 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -348,19 +408,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D078C5AB201790E60090D655 /* Rswift */ = {
+		D02FBC6E2212E67E004A89DB /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = Rswift;
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
 		};
 		D078C5AC201790FA0090D655 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -374,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -383,21 +447,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02FBC8322130EE1004A89DB /* UIView+Extensions.swift in Sources */,
 				D078C5A320177A960090D655 /* RegionViewController.swift in Sources */,
 				D0304303201B6C0B000FE97C /* Entry.swift in Sources */,
 				D078C5BB201796CD0090D655 /* DataManager.swift in Sources */,
 				D078C5B72017951D0090D655 /* Place.swift in Sources */,
 				D078C5B92017968E0090D655 /* DataLoader.swift in Sources */,
+				D02FBC802213030F004A89DB /* BaseViewController.swift in Sources */,
 				C9C6792D202094B200B3ED6C /* PlacesTableViewCell.swift in Sources */,
 				D078C5A7201787470090D655 /* PlaceViewController.swift in Sources */,
-				D078C5AE201792F90090D655 /* R.generated.swift in Sources */,
 				D078C5B0201793600090D655 /* Region.swift in Sources */,
 				D078C5B5201795070090D655 /* Country.swift in Sources */,
 				D078C5AA2017890F0090D655 /* TableViewConfigurable.swift in Sources */,
 				D078C59E201770890090D655 /* ChecklistViewController.swift in Sources */,
+				D02FBC7A2212F91C004A89DB /* assets-images.swift in Sources */,
 				D078C59C201770280090D655 /* TravelTabBarController.swift in Sources */,
 				D078C5B32017941A0090D655 /* BaseObject.swift in Sources */,
 				D0B922BC2017B1C500785AA3 /* DataPropertyList.swift in Sources */,
+				D02FBC792212F91C004A89DB /* strings.swift in Sources */,
 				D078C58820176F1E0090D655 /* AppDelegate.swift in Sources */,
 				D078C5A1201771BA0090D655 /* ToVisitViewController.swift in Sources */,
 				D078C5A52017833C0090D655 /* CountryViewController.swift in Sources */,
@@ -440,6 +507,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -447,6 +515,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -497,6 +566,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -504,6 +574,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -535,7 +606,7 @@
 		};
 		D078C59720176F1E0090D655 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 581BA928A5BD369D16F33AA0 /* Pods-Travelogue.debug.xcconfig */;
+			baseConfigurationReference = 911081371044F9078134FE06 /* Pods-Travelogue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -550,14 +621,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9dbdff03-4b99-4550-831d-cd06904c4603";
 				PROVISIONING_PROFILE_SPECIFIER = JoshDubeyWildcard;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D078C59820176F1E0090D655 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43051C455013593C5883D2E5 /* Pods-Travelogue.release.xcconfig */;
+			baseConfigurationReference = 39508341B3929CF3D3E57941 /* Pods-Travelogue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -571,7 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshdubey.Travelogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

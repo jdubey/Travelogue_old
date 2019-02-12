@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaceViewController: UIViewController, TableViewConfigurable {
+class PlaceViewController: BaseViewController, TableViewConfigurable {
 
     let placeTableView = UITableView()
     let places: [Place]
@@ -16,7 +16,7 @@ class PlaceViewController: UIViewController, TableViewConfigurable {
 
     init(_ country: Country) {
         self.country = country
-        self.places = country.places.flatMap {$0}
+        self.places = country.places.compactMap {$0}
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -52,5 +52,7 @@ extension PlaceViewController: UITableViewDataSource {
 }
 
 extension PlaceViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
 }
