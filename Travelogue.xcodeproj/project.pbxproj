@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7AC5B66B5E080FCACC43A65A /* Pods_Travelogue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F915BBE3D2252DD79A601584 /* Pods_Travelogue.framework */; };
+		C9B102C02173B5F4009DECAB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102BF2173B5F3009DECAB /* Realm.framework */; };
+		C9B102C12173B5F4009DECAB /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102BF2173B5F3009DECAB /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9B102C42173B5FB009DECAB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102C32173B5FB009DECAB /* RealmSwift.framework */; };
+		C9B102C52173B5FB009DECAB /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B102C32173B5FB009DECAB /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9C6792D202094B200B3ED6C /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6792C202094B200B3ED6C /* PlacesTableViewCell.swift */; };
 		D0304301201B6B78000FE97C /* AppData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0304300201B6B78000FE97C /* AppData.json */; };
 		D0304303201B6C0B000FE97C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0304302201B6C0B000FE97C /* Entry.swift */; };
 		D078C58820176F1E0090D655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078C58720176F1E0090D655 /* AppDelegate.swift */; };
@@ -33,9 +38,27 @@
 		D0D2E9AA201B35D100A01E23 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0D2E9A9201B35D100A01E23 /* Places.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C9B102C22173B5F4009DECAB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9B102C52173B5FB009DECAB /* RealmSwift.framework in Embed Frameworks */,
+				C9B102C12173B5F4009DECAB /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		43051C455013593C5883D2E5 /* Pods-Travelogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.release.xcconfig"; sourceTree = "<group>"; };
 		581BA928A5BD369D16F33AA0 /* Pods-Travelogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B102BF2173B5F3009DECAB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		C9B102C32173B5FB009DECAB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		C9C6792C202094B200B3ED6C /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		D0304300201B6B78000FE97C /* AppData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppData.json; sourceTree = "<group>"; };
 		D0304302201B6C0B000FE97C /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D078C58420176F1E0090D655 /* Travelogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B102C02173B5F4009DECAB /* Realm.framework in Frameworks */,
 				7AC5B66B5E080FCACC43A65A /* Pods_Travelogue.framework in Frameworks */,
+				C9B102C42173B5FB009DECAB /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +109,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9C6792B2020946300B3ED6C /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				D078C5A6201787470090D655 /* PlaceViewController.swift */,
+				C9C6792C202094B200B3ED6C /* PlacesTableViewCell.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
 		D078C57B20176F1E0090D655 = {
 			isa = PBXGroup;
 			children = (
+				C9B102C32173B5FB009DECAB /* RealmSwift.framework */,
+				C9B102BF2173B5F3009DECAB /* Realm.framework */,
 				D078C58620176F1E0090D655 /* Travelogue */,
 				D078C58520176F1E0090D655 /* Products */,
 				E00A2D37C99FF6F366EF9B67 /* Pods */,
@@ -125,10 +161,10 @@
 		D078C59920176FC70090D655 /* Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				C9C6792B2020946300B3ED6C /* Places */,
 				D078C59D201770890090D655 /* ChecklistViewController.swift */,
 				D078C5A220177A960090D655 /* RegionViewController.swift */,
 				D078C5A42017833C0090D655 /* CountryViewController.swift */,
-				D078C5A6201787470090D655 /* PlaceViewController.swift */,
 			);
 			path = Checklist;
 			sourceTree = "<group>";
@@ -211,8 +247,8 @@
 				D078C58120176F1E0090D655 /* Frameworks */,
 				D078C58220176F1E0090D655 /* Resources */,
 				3825C091D75B5D2B1D3A6135 /* [CP] Embed Pods Frameworks */,
-				BD5FA4FD949041544AAE4417 /* [CP] Copy Pods Resources */,
 				D078C5AC201790FA0090D655 /* SwiftLint */,
+				C9B102C22173B5F4009DECAB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,15 +317,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -311,22 +345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BD5FA4FD949041544AAE4417 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Travelogue/Pods-Travelogue-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D078C5AB201790E60090D655 /* Rswift */ = {
@@ -369,6 +388,7 @@
 				D078C5BB201796CD0090D655 /* DataManager.swift in Sources */,
 				D078C5B72017951D0090D655 /* Place.swift in Sources */,
 				D078C5B92017968E0090D655 /* DataLoader.swift in Sources */,
+				C9C6792D202094B200B3ED6C /* PlacesTableViewCell.swift in Sources */,
 				D078C5A7201787470090D655 /* PlaceViewController.swift in Sources */,
 				D078C5AE201792F90090D655 /* R.generated.swift in Sources */,
 				D078C5B0201793600090D655 /* Region.swift in Sources */,
@@ -520,6 +540,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8PWF84GXNR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Travelogue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshdubey.Travelogue;
@@ -538,6 +562,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Travelogue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshdubey.Travelogue;

@@ -7,7 +7,6 @@ target 'Travelogue' do
 
   # Pods for Travelogue
 	pod 'R.swift'
-  	pod 'RealmSwift'
   	pod 'SwiftLint'
 	pod 'BEMCheckBox'
 end

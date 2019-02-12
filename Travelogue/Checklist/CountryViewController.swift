@@ -31,6 +31,7 @@ class CountryViewController: UIViewController, TableViewConfigurable {
         super.viewDidLoad()
         title = region.name
         configureTableView(countryTableView)
+        countryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
     override func didReceiveMemoryWarning() {

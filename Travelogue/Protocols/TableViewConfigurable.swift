@@ -19,6 +19,5 @@ extension TableViewConfigurable where Self: UIViewController, Self: UITableViewD
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 }

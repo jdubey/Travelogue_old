@@ -23,7 +23,7 @@ class RegionViewController: UIViewController, TableViewConfigurable {
         super.viewDidLoad()
         configureTableView(regionTableView)
         self.navigationController?.navigationBar.prefersLargeTitles = true
-
+        regionTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         title = "Regions"
 
     }

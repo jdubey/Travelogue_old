@@ -3,27 +3,26 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
-  - Realm (3.0.2):
-    - Realm/Headers (= 3.0.2)
-  - Realm/Headers (3.0.2)
-  - RealmSwift (3.0.2):
-    - Realm (= 3.0.2)
   - SwiftLint (0.24.0)
 
 DEPENDENCIES:
   - BEMCheckBox
   - R.swift
-  - RealmSwift
   - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BEMCheckBox
+    - R.swift
+    - R.swift.Library
+    - SwiftLint
 
 SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
-  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
-  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: ca1073f3abeaacdaa66daf0aeb466dc8d18c526a
+PODFILE CHECKSUM: 03bbbd8eb7f2c7a4908c070292ce57c23f8480e3
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3
