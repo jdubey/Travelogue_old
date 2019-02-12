@@ -18,7 +18,6 @@ class RegionViewController: UIViewController, TableViewConfigurable {
         return searchController
     }()
 
-    // here is the chnge
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView(regionTableView)
